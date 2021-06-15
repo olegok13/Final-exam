@@ -1,0 +1,129 @@
+.footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__btn {
+  width: 160px;
+  height: 55px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  margin-right: 100px;
+}
+
+.footer__btn:hover {
+  background-color: #fdc400;
+}
+
+.footer__btn:focus {
+  background-color: #fdc400;
+}
+
+.footer__logo {
+  height: 100px;
+  width: 100px;
+  background-image: url(/img/Logofooter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: cover;
+  margin-left: 100px;
+}
+
+.footer .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 518px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer .main .footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .main .footer__nav__href {
+  text-decoration: none;
+}
+
+.footer .logomain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 347px;
+  width: 100%;
+}
+
+.footer .logomain__span {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.footer__nav {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+.footer .footer__logo__nav {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  display: block;
+}
+
+@media screen and (max-width: 1180px) {
+  #hid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #hid {
+    display: none;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

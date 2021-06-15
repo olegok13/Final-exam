@@ -1,0 +1,120 @@
+.title {
+  height: 437px;
+  width: 100%;
+  max-width: 770px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 100px;
+  padding-top: 0px;
+  position: absolute;
+}
+
+.title__backtitle {
+  position: relative;
+  top: 55px;
+}
+
+.title__main {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 74px;
+  line-height: 87px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.title__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  padding-top: 60px;
+}
+
+.title__conteiner__submit {
+  width: 160px;
+  height: 55px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #181d20;
+  border: 1px solid #fdc400;
+  border-radius: 5px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.title__conteiner__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  font-family: "Museo Sans Cyrl";
+  display: block;
+}
+
+.title__conteiner__arrow {
+  background-image: url(/img/Group115.png) cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    padding-right: 20px;
+  }
+  .title__main {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 65px;
+    margin: 0;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0 auto;
+  }
+  .title__conteiner {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .title__conteiner__text {
+    margin: 20px;
+  }
+  .title__main {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .title__conteiner__arrow {
+    margin: 20px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

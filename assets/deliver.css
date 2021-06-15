@@ -1,0 +1,43 @@
+.text7 {
+  max-width: 330px;
+}
+
+.title7::before {
+  content: "HOW";
+}
+
+.conteiner7 {
+  max-width: 1030px;
+}
+
+.img7 {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 634px;
+}
+
+.img7__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  margin: 0 0 0 0;
+  display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  .conteiner7 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=deliver.css.map */

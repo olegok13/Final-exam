@@ -1,0 +1,171 @@
+@charset "UTF-8";
+.statistics {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #181d20;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.statistics__title {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  color: white;
+  text-align: center;
+  margin: 170px 0 70px 0;
+}
+
+.statistics__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.statistics__conteiner__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.statistics .bar__circle {
+  width: 200px;
+  height: 280px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.statistics .bar__circle__subtitle {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+  text-align: center;
+}
+
+.statistics .bar__circle__line {
+  width: 40px;
+  height: 2px;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 650px) {
+  .statistics__conteiner__bar {
+    padding: 0;
+  }
+  .statistics__title {
+    margin: 30px 0 15px 0;
+  }
+}
+
+/**
+ * 1. The `reverse` animation direction plays the animation backwards
+ *    which makes it start at the stroke offset 100 which means displaying
+ *    no stroke at all and animating it to the value defined in the SVG
+ *    via the inline `stroke-dashoffset` attribute.
+ * 2. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+ */
+/*для полодит*/
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse;
+  /* 1 */
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  /* 2, 3 */
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  /* 4 */
+}
+
+/**
+   * 1. Rotate by -90 degree to make the starting point of the
+   *    stroke the top of the circle.
+   * 2. Scaling mirrors the circle to make the stroke move right
+   *    to mark a positive chart value.
+   * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+   *    and Edge, use the transform attribute directly on the SVG element as a
+   * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+   */
+/*только для отрицательного*/
+.circle-chart__circle--negative {
+  -webkit-transform: rotate(-90deg) scale(1, -1);
+          transform: rotate(-90deg) scale(1, -1);
+  /* 1, 2, 3 */
+}
+
+.circle-chart__percent {
+  fill: white;
+}
+
+.circle-chart__info {
+  -webkit-animation: circle-chart-appear 2s forwards;
+          animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  -webkit-transform: translateY(0.3em);
+          transform: translateY(0.3em);
+}
+
+/*ползет полоса*/
+@-webkit-keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/*плавная надпись*/
+@-webkit-keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/* Layout styles only, not needed for functionality */
+/*# sourceMappingURL=statistics.css.map */

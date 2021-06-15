@@ -1,0 +1,52 @@
+.text8 {
+  max-width: 330px;
+}
+
+.title8::before {
+  display: none;
+}
+
+.conteiner8 {
+  max-width: 1050px;
+  // flex-direction: column;
+  padding-top: 145PX;
+}
+.img8 {
+  background: url(/img/questions.png);
+  max-width: 641px;
+  height: 479px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+
+  &__text {
+    font-family: "Museo Sans Cyrl";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin: 0 0 0 0;
+    display: block;
+   
+  }
+}
+
+.text8{
+    max-width: 345px;
+}
+
+.more2{
+margin: 48px 0;
+
+
+}
+@media screen and (max-width: 1280px) {
+  .conteiner8 {
+    flex-direction: column;
+  }
+}
+
+.submit3{
+margin-top: 0;
+}

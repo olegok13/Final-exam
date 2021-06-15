@@ -1,0 +1,95 @@
+.item__text__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 210px;
+}
+
+.item__text__price__current {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+
+.item__text__price__irrelevant {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #afafaf;
+}
+
+.submit2 {
+  width: 160px;
+  height: 54px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Museo Sans Cyrl";
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  margin-top: 24px;
+}
+
+.title__conteiner__submit:hover {
+  background-color: #fdc400;
+  color: black;
+}
+
+.title__conteiner__submit:focus {
+  background-color: #fdc400;
+  color: black;
+}
+
+.conteiner6 {
+  padding-top: 180px;
+}
+
+.img6 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 363px;
+  max-width: 560px;
+  background-image: url(/img/linzu.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.textimg6 {
+  max-width: 500px;
+}
+
+.title6::before {
+  display: none;
+}
+
+.title6 {
+  margin-bottom: 24px;
+  max-width: 446px;
+}
+
+@media screen and (max-width: 768px) {
+  .img6 {
+    height: calc(363px/2);
+    max-width: calc(560px/2);
+  }
+  .conteiner6 {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .conteiner6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=linzu.css.map */

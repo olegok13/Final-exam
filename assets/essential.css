@@ -1,0 +1,193 @@
+.essentail {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #181d20;
+  margin: 0 auto;
+}
+
+.essentail__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1180px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 190px;
+  margin-left: 100px;
+}
+
+.essentail__conteiner__img {
+  background-image: url(/img/manwithphoto.png);
+  background-position: center cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 500px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 355px;
+}
+
+.essentail__conteiner__img__logo {
+  float: right;
+  margin-top: -11px;
+  margin-right: -15px;
+}
+
+.essentail__conteiner__text {
+  max-width: 580px;
+  width: 100%;
+}
+
+.essentail__conteiner__text__title {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  position: relative;
+  color: #fff;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  letter-spacing: 0.02em;
+}
+
+.essentail__conteiner__text__title::before {
+  content: "ESSENTIAL";
+  position: absolute;
+  opacity: 0.3;
+  top: -13px;
+  font-size: 77px;
+  left: -5px;
+}
+
+.essentail__conteiner__text__subtitle {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  margin: 0 0 0 0;
+  display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  .essentail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .essentail__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1180px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+  .essentail__conteiner__img {
+    background-image: url(/img/manwithphoto.png);
+    background-position: center top cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 500px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 50px;
+    height: 353px;
+  }
+  .essentail__conteiner__img__logo {
+    float: right;
+    margin-top: -11px;
+    margin-right: -15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .essentail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .essentail__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1180px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .essentail__conteiner__text__title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .essentail__conteiner__text__title::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .essentail__conteiner {
+    margin: 0px 20px 0px 20px;
+  }
+  .essentail__conteiner__img {
+    background-image: url(/img/manwithphoto.png);
+    background-position: cover;
+    background-position: 46% 75%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 300px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 50px;
+    height: 300px;
+  }
+  .essentail__conteiner__text {
+    max-width: 580px;
+    width: 100%;
+  }
+  .essentail__conteiner__text__title {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 54px;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+  }
+  .essentail__conteiner__text__subtitle {
+    font-family: "Museo Sans Cyrl";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    margin: 0 0 0 0;
+    display: block;
+  }
+}
+/*# sourceMappingURL=essential.css.map */
