@@ -1,0 +1,29 @@
+.img3 {
+  background-image: url(/img/cinema.png);
+  height: 370px;
+}
+
+.conteiner3 {
+  padding-top: 150px;
+  margin-left: 190px;
+}
+
+.title3::before {
+  content: "CINEMA";
+  position: absolute;
+  opacity: 0.3;
+  top: -13px;
+  font-size: 77px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1070px) {
+  .img3 {
+    height: 280px;
+  }
+  .conteiner3 {
+    padding-top: 30px;
+    margin-left: 100px;
+  }
+}
+/*# sourceMappingURL=cinema.css.map */

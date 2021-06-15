@@ -1,0 +1,17 @@
+.img2 {
+  background-image: url(/img/lockandbalance.png);
+}
+
+.title2::before {
+  content: "LOCK";
+  position: absolute;
+  opacity: 0.3;
+  top: -13px;
+  font-size: 77px;
+  left: -5px;
+}
+
+.conteiner2{
+padding-top: 160px;
+
+}

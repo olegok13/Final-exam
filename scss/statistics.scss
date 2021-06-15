@@ -1,0 +1,156 @@
+.statistics {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #181d20;
+//   height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+  &__title{
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    color: white;
+    text-align: center;
+    margin: 170px 0 70px 0 ;
+  }
+  
+  &__conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   &__bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 50px;
+    }
+  }
+  .bar__circle {
+    width: 200px;
+    height: 280px;
+    box-sizing: border-box;
+    margin:0 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    &__subtitle {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      color: white;
+      text-align: center;
+    }
+    &__line {
+      width: 40px;
+      height: 2px;
+      background-color: yellow;
+    }
+  }
+}
+
+
+@media screen and (max-width: 650px){
+    .statistics__conteiner__bar{
+        padding: 0;
+    }
+    .statistics__title{
+        margin: 30px 0 15px 0;
+    }
+}
+/**
+ * 1. The `reverse` animation direction plays the animation backwards
+ *    which makes it start at the stroke offset 100 which means displaying
+ *    no stroke at all and animating it to the value defined in the SVG
+ *    via the inline `stroke-dashoffset` attribute.
+ * 2. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+ */
+/*для полодит*/
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+/**
+   * 1. Rotate by -90 degree to make the starting point of the
+   *    stroke the top of the circle.
+   * 2. Scaling mirrors the circle to make the stroke move right
+   *    to mark a positive chart value.
+   * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+   *    and Edge, use the transform attribute directly on the SVG element as a
+   * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+   */
+/*только для отрицательного*/
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1, -1); /* 1, 2, 3 */
+}
+.circle-chart__percent {
+  fill: white;
+}
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards; //t text
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+/*ползет полоса*/
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+/*плавная надпись*/
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Layout styles only, not needed for functionality */
+// html {
+//   font-family: sans-serif;
+//   // padding-right: 1em;
+//   // padding-left: 1em;
+// }
+
+// .grid {
+//   display: grid;
+//   grid-column-gap: 1em;
+//   grid-row-gap: 1em;
+//   grid-template-columns: repeat(1, 1fr);
+// }
+
+// @media (min-width: 31em) {
+//   .grid {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+//   .photo {
+//       display: inline-block; /* Строчно-блочный элемент */
+//       position: relative; /* Относительное позиционирование */
+//      }
+//      .photo:hover::after {
+//       content: attr(data-title); /* Выводим текст */
+//       position: absolute; /* Абсолютное позиционирование */
+//       left: 0; right: 0; bottom: 5px; /* Положение подсказки */
+//       z-index: 1; /* Отображаем подсказку поверх других элементов */
+//       background: rgba(108, 123, 170, 0.6); /* Полупрозрачный цвет фона */
+//       color: #fff; /* Цвет текста */
+//       text-align: center; /* Выравнивание текста по центру */
+//       font-family: Arial, sans-serif; /* Гарнитура шрифта */
+//       font-size: 11px; /* Размер текста подсказки */
+//       padding: 5px 10px; /* Поля */
+//       border: 1px solid rgb(104, 86, 86); /* Параметры рамки */
+//      }

@@ -1,0 +1,109 @@
+.title {
+  //   background-color: khaki;
+  height: 437px;
+  width: 100%;
+  max-width: 770px;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-top: 0px;
+  position: absolute;
+
+  &__backtitle {
+    position: relative;
+    top: 55px;
+  }
+
+  &__main {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 87px;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 60px;
+
+    &__submit {
+      width: 160px;
+      height: 55px;
+      font-family: "Museo Sans Cyrl";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      color: #fff;
+      background-color: #181d20;
+      border: 1px solid #fdc400;
+      border-radius: 5px;
+      display: block;
+      box-sizing: border-box;
+      transition: all 500ms ease;
+    }
+    &__text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      color: #fff;
+      font-family: "Museo Sans Cyrl";
+      display: block;
+    }
+
+    &__arrow {
+      background-image: url(/img/Group115.png) cover;
+      box-sizing: border-box;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    padding-right: 20px;
+  }
+
+  .title__main {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 65px;
+    margin: 0;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 550px) {
+  .title {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0 auto;
+    &__conteiner {
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  .title__conteiner__text {
+    margin: 20px;
+  }
+
+  .title__main {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .title__conteiner__arrow {
+    margin: 20px;
+  }
+}

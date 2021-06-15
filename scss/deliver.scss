@@ -1,0 +1,39 @@
+.text7{
+
+    max-width: 330px;
+}
+
+.title7::before{
+    content: "HOW";
+}
+
+.conteiner7{
+max-width: 1030px;
+// flex-direction: column;
+
+}
+.img7{
+    background: none;
+    display: flex;
+    align-items: center;
+    max-width: 634px;
+
+    &__text{
+        font-family: "Museo Sans Cyrl";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: #fff;
+        margin: 0 0 0 0;
+        display: block; 
+    }
+}
+
+@media screen and (max-width: 1280px){
+
+    .conteiner7{
+        flex-direction: column;
+
+    }
+}
